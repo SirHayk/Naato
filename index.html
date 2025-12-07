@@ -342,52 +342,18 @@ aside nav label:last-of-type{border-bottom:0;}
  
 #section4:checked ~ #container aside nav #label4{background:rgba(var(--Message-icon-background),.1);}
  
-#section1:checked ~ #container aside nav #label1::before, 
-#section1:checked ~ #container aside nav #label1::after,
-#section2:checked ~ #container aside nav #label2::before, 
-#section2:checked ~ #container aside nav #label2::after,
-#section3:checked ~ #container aside nav #label3::before, 
-#section3:checked ~ #container aside nav #label3::after,
-#section4:checked ~ #container aside nav #label4::before, 
-#section4:checked ~ #container aside nav #label4::after{
-    width:6px;
-    content:'';
-    height:10px;
-    margin-top:2px;
-    margin-left:-20px; 
-    position:absolute;
-    transform-origin:0 100%;
-    transform:rotate(-45deg);
-    border-radius:4px 4px 0 0;
-    -o-transform-origin:0 100%;
-    -ms-transform-origin:0 100%;
-    -o-transform:rotate(-45deg);
-    -ms-transform:rotate(-45deg);
-    -moz-transform-origin:0 100%;
-    -moz-transform:rotate(-45deg);
-    -moz-border-radius:4px 4px 0 0;
-    -webkit-transform-origin:0 100%;
-    -webkit-transform:rotate(-45deg);
-    background-color:rgb(var(--Sub-color));
+#container aside nav label::before {
+    content: '★'; /* estrella */
+    font-family: 'feather'; /* o cualquier fuente que soporte ★ */
+    color: rgb(var(--Sub-color));
+    font-size: 1em; /* ajusta tamaño */
+    width: auto;
+    height: auto;
+    margin: 0 10px 0 0; /* separa un poco del texto */
+    position: relative;
+    transform: none;
+    background: none;
 }
- 
-#section1:checked ~ #container aside nav #label1::after,
-#section2:checked ~ #container aside nav #label2::after,
-#section3:checked ~ #container aside nav #label3::after,
-#section4:checked ~ #container aside nav #label4::after{
-     margin-top:2px;
-    margin-left:-26px;
-    transform:rotate(45deg);
-    -o-transform:rotate(45deg);
-    -ms-transform:rotate(45deg);
-    transform-origin :100% 100%;
-    -moz-transform:rotate(45deg); 
-    -o-transform-origin:100% 100%;
-    -ms-transform-origin:100% 100%;
-    -moz-transform-origin:100% 100%;
-    -webkit-transform:rotate(45deg);
-    -webkit-transform-origin:100% 100%;
- }
  
 #section1:checked ~ #container aside nav #label1::before{background:rgb(var(--About-icon-background));}
  
